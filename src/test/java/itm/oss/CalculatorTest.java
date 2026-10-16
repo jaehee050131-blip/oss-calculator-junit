@@ -51,6 +51,6 @@ class CalculatorTest {
     @Test
     @DisplayName("Testing function for multiply")
     void multiply(){
-        assertEquals(25,calc.add(5,5),"5 * 5 should be 25");
+        assertEquals(25,calc.multiply(5,5),"5 * 5 should be 25");
     }
 }
