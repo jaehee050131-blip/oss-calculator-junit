@@ -2,6 +2,9 @@ package itm.oss;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.beans.Transient;
+
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import org.junit.jupiter.api.DisplayName;
@@ -45,5 +48,9 @@ class CalculatorTest {
         assertFalse(calc.isPrime(-4), "There are not negative primer numbers.");
         assertFalse(calc.isPrime(-5), "There are not negative primer numbers.");
     }
-
+    @Test
+    @DisplayName("Testing function for multiply")
+    void multiply(){
+        assertEquals(25,calc.add(5,5),"5 * 5 should be 25");
+    }
 }
